@@ -64,7 +64,7 @@ nav img {
     font-family: var(--font1);
     margin-top: 150px;
     width: 50%;
-    height: 10000px;
+    height: 400px;
     float: left;
 }
 #history-container h1 {
@@ -103,6 +103,7 @@ nav img {
         margin-top: 70px;
         width: 100%;
         height: fit-content;
+        display: block;
     }
     #history-container {
         width: 100%;
