@@ -2,11 +2,12 @@
 
 :root {
     --cor0: #185941;
-    --cor1: #C9A472;
-    --cor2: #6B3739;
-    --cor3: #850C13;
+    --cor1: #408a49;
+    --cor2: #C9A472;
+    --cor3: #6B3739;
+    --cor4: #850C13;
 
-    --font1: 'Cinzel';
+    --font0: 'Cinzel';
 }
 
 * {
@@ -20,13 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.335);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.226);
 }
 #nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--font1);
+    font-family: var(--font0);
     font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
@@ -41,36 +42,40 @@
     background-color: var(--cor0);
     color: white;
 }
-#nav #logo:hover{
+#nav .logo:hover{
     background-color: transparent;
 }
 #nav img {
-    width: 100px;
+    max-width: 105px;
 }
-article:nth-of-type(1) {
-    line-height: 0.7;
+#container1 {
+    margin-top: 10vh;
     width: 100%;
-    height: 400px;
-    background-image: url(images/foto.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: center;
+    height: 500px;
 }
-article h1 {
-    width: 100%;
-    color: white;
-    font-family: var(--font1);
-    font-weight: 600;
-    font-size: 100px;
-    letter-spacing: 10px;
-    text-shadow: 1px 1px 0px black;
-    padding-top: 5%;
+#containertext {
+    width: 50%;
+    height: 500px;
+    float: left;
+    outline: 1px solid blue;
 }
-article p {
-    color: rgb(220, 218, 218);
-    font-weight: 400;
-    text-shadow: 1px 1px 0px black;
-    font-size: 40px;
-    font-family: var(--font1);
+#containertext h1 {
+    font-family: var(--font0);
+    width: 700px;
+    color: var(--cor0);
+    font-size: 50px;
+    margin: 100px 0px 0px 100px;
+}
+#containertext p {
+    color: var(--cor1);
+    font-size: 20px;
+    margin: 0px 0px 0px 100px;
+    width: 700px;
+}
+
+#containerimage {
+    width: 50%;
+    height: 500px;
+    outline: 1px solid red;
+    float: right;
 }
