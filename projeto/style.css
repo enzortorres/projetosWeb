@@ -97,7 +97,11 @@ nav img {
         display: flex;
     }
     nav a {
-        display: none;
+        width: 30px;
+        font-size: 15px;
+    }
+    nav #logo img{
+        width: 70px;
     }
     #container {
         margin-top: 70px;
