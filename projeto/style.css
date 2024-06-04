@@ -134,6 +134,7 @@ main h2 {
     }
     #image1-container img {
         width: 100%;
+        height: 400px;
     }
 }
 #menu-container {
