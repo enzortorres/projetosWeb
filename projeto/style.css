@@ -331,13 +331,13 @@ main h2 {
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    line-height: 25px;
 }
 #horary h1 {
     color: white;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-top: 33px;
 }
 #horary p {
     color: rgb(190, 190, 190);
@@ -345,10 +345,13 @@ main h2 {
     font-weight: bold;
     width: 260px
 }
+#horary p:nth-of-type(1) {
+    margin-top: 25px;
+}
 #horary p:nth-of-type(5) {
-    margin-top: 20px;
     width: 100%;
     text-align: center;
+    margin-top: 18px;
 }
 #horary p:nth-of-type(5)::before {
     content: "";
@@ -364,13 +367,13 @@ main h2 {
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     line-height: 25px;
 }
 #contact h1 {
     font-size: 30px;
     color: white;
+    margin-top: 33px;
 }
 #contact p {
     font-size: 17px;
@@ -382,7 +385,7 @@ main h2 {
     color: var(--cor2);
 }
 #contact p:nth-of-type(1) {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 #contact p:nth-of-type(1)::before {
     content: "📞";
@@ -393,8 +396,8 @@ main h2 {
     margin-right: 10px;
 }
 #contact p:nth-of-type(3) {
-    margin-top: 52px;
     width: 250px;
+    margin-top: 43px;
 }
 #contact a {
     color: rgb(200, 200, 200);
