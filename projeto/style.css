@@ -72,7 +72,7 @@ main h2 {
 #history-container {
     font-family: var(--font1);
     margin-top: 150px;
-    width: 50%;
+    width: 55%;
     height: 400px;
     float: left;
 }
@@ -84,14 +84,14 @@ main h2 {
 #history-container p {
     text-indent: 50px;
     font-size: 20px;
-    padding: 30px;
+    padding: 30px 30px 30px 60px;
     color: var(--cor1);
 }
 #image1-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
     height: 600px;
     float: left;
 }
@@ -172,25 +172,27 @@ main h2 {
     font-size: 20px;
     font-weight: bold;
 }
-#minipizza-container {
-    width: 50%;
-    height: 500px;
-    background-color: red;
-    animation: images-minipizza 8s infinite ease;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-
-}
 .text-container1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.55);
 }
+#minipizza-container {
+    width: 50%;
+    height: 450px;
+    background: url("images/minipizzatutti2.jpg") no-repeat;  
+    background-size: 100% 100%;
+    animation: images-minipizza 8s infinite ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+}
 #events-container {
     width: 50%;
-    height: 500px;
-    background-color: blue;  
+    height: 450px;
+    background: url("images/eventostutti2.jpg") no-repeat;  
+    background-size: 100% 100%;
     float: right;
-    animation: images-events 10s infinite linear;
+    animation: images-events 8s infinite linear;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 @keyframes images-minipizza {
@@ -238,7 +240,7 @@ main h2 {
 }
 #reserve-container-fullsize {
     width: 100%;
-    height: 500px;
+    height: 400px;
     font-family: var(--font1);
 }
 #reserve-container-fullsize h1 {
@@ -286,6 +288,7 @@ main h2 {
     background-color: var(--cor0);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     display: flex;
+    padding-bottom: px;
 }
 #slogan {
     width: 25%;
@@ -307,6 +310,21 @@ main h2 {
     margin: 10px auto 0px;
     width: 120px;
     height: 100px;
+}
+@media (max-width: 1460px) {
+    #slogan p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1350px) {
+    #slogan p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1080px) {
+    #slogan p {
+        font-size: 15px;
+    }
 }
 #horary {
     width: 25%;
@@ -415,6 +433,7 @@ main h2 {
 #rights {
     width: 100%;
     height: 25px;
+    color: var(--cor2);
     background-color: #113e2e;
     box-shadow: 0px -5px 5px #113e2e;
     text-align: center;
@@ -491,6 +510,9 @@ main h2 {
     #footer-container > #slogan {
         width: 100%;
     }
+    #slogan p {
+        font-size: 20px;
+    }
     #footer-container > #horary {
         width: 100%;
     }
@@ -503,5 +525,8 @@ main h2 {
     iframe {
         width: 150px;
         height: 100px;
+    }
+    #rights {
+        font-size: 14px;
     }
 }
