@@ -71,7 +71,7 @@ main h2 {
 }
 #history-container {
     font-family: var(--font1);
-    margin-top: 150px;
+    margin: 150px 0px;
     width: 55%;
     height: 400px;
     float: left;
@@ -376,13 +376,13 @@ main h2 {
     font-size: 17px;
     color: rgb(200, 200, 200);
     font-weight: bold;
-    width: 230px;
+    width: 240px;
 }
 #contact p:hover {
     color: var(--cor2);
 }
 #contact p:nth-of-type(1) {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #contact p:nth-of-type(1)::before {
     content: "📞";
@@ -393,21 +393,23 @@ main h2 {
     margin-right: 10px;
 }
 #contact p:nth-of-type(3) {
-    margin-top: 30px;
+    margin-top: 52px;
     width: 250px;
 }
 #contact a {
     color: rgb(200, 200, 200);
     font-family: var(--font1);
     font-weight: bold;
+    font-size: 16px;
     text-decoration: none;
-    width: 230px;
+    width: 300px;
+    margin-left: 70px;
 }
 #contact a:hover {
     color: var(--cor2);
 }
 #contact img {
-    width: 20px;
+    width: 16px;
     filter: invert();
     margin-right: 10px;
 }
