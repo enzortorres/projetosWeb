@@ -37,7 +37,7 @@ nav a {
     height: 30%;
     width: 100px;
     transition-duration: 0.5s;
-    margin: 0px 20px;
+    margin: 0px 25px;
 }
 nav a:hover {
     border-bottom: 1px solid var(--cor0);
@@ -95,10 +95,186 @@ main h2 {
 }
 #image1-container img {
     width: 30vw;
-    height: 50vh;
+    height: 25vw;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.686);
 }
-@media (max-width: 1000px) {
+#menu-container {
+    padding-top: 20px;
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:  75px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+#menu-container p {
+    font-family: var(--font1);
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 10px;
+    color: var(--cor2);
+    font-size: 20px;
+}
+
+#menu-container img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#menu-container img:hover {
+    filter: brightness(0.8);
+}
+.card {
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+}
+.card:hover {
+    transform: scale(.95);
+}
+#image2-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+#image2-container h1{
+    font-family: var(--font1);
+    width: 100%;
+    height: 50%;
+    color: var(--cor2);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#image2-container p {
+    font-family: var(--font1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#minipizza-container {
+    width: 50%;
+    height: 500px;
+    background-color: red;
+    animation: images-minipizza 8s infinite ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+}
+.text-container1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+#events-container {
+    width: 50%;
+    height: 500px;
+    background-color: blue;  
+    float: right;
+    animation: images-events 10s infinite linear;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+@keyframes images-minipizza {
+    from {
+        background-image: url("images/minipizzatutti2.jpg");
+        background-size: 100% 100%;
+        animation-delay: 3s;
+    }
+    50% {
+        background-image: url("images/minipizzatutti1.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        animation-delay: 3s;
+    }
+    100% {
+        background-image: url("images/minipizzatutti2.jpg");
+        background-size: 100% 100%;
+        animation-delay: 3s;
+    }
+}
+@keyframes images-events {
+    from {
+        background-image: url("images/eventostutti2.jpg");
+        background-size: 100% 100%;
+        animation-delay: 3s;
+    }
+    50% {
+        background-image: url("images/eventostutti1.jpg");
+        background-size: 100% 100%;
+        animation-delay: 3s;
+    }
+    100% {
+        background-image: url("images/eventostutti2.jpg");
+        background-size: 100% 100%;
+        animation-delay: 3s;
+    }
+}
+#reserve-container-smallsize {
+    display: none;
+    padding: 50px 0px;
+}
+#reserve-container-smallsize h1 {
+    color: black;
+    text-align: center;
+}
+#reserve-container-fullsize {
+    width: 100%;
+    height: 500px;
+    font-family: var(--font1);
+}
+#reserve-container-fullsize h1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 50px;
+}
+#button-container1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-container2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.button {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: var(--font1);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor2);
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #a7875f;
+    transform: scale(1.1);
+}
+@media (max-width: 900px) {
     #logo {
         width: 50%;
         display: flex;
@@ -137,44 +313,170 @@ main h2 {
         width: 100%;
         height: 400px;
     }
+    #image2-container {
+        display: block;
+    }
+    #image2-container p {
+        text-align: center;
+    }
+    #minipizza-container {
+        width: 100%;
+    }
+    #events-container {
+        margin: 50px 0px;
+        width: 100%;
+    }
+    #reserve-container-smallsize {
+        display: block;
+        margin: 50px 0px;
+    }
+    #reserve-container-fullsize {
+        display:none;
+    }
+    .button {
+        font-size: 20px;
+    }
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        height: 1000px;
+    }
+    #footer-container > #slogan {
+        width: 100%;
+    }
+    #footer-container > #horary {
+        width: 100%;
+    }
+    #footer-container > #contact {
+        width: 100%;
+    }
+    #footer-container > #location {
+        width: 100%;
+    }
+    iframe {
+        width: 150px;
+        height: 100px;
+    }
 }
-#menu-container {
-    padding-top: 20px;
-    width: 60%;
-    margin: auto;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:  75px;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-#menu-container p {
+#footer-container {
     font-family: var(--font1);
-    font-weight: bold;
-    text-align: center;
-    transition: 0.5s;
-    margin-top: 10px;
-    color: var(--cor2);
+    width: 100%;
+    height: fit-content;
+    background-color: var(--cor0);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+#slogan {
+    width: 25%;
+    height: 250px;
+    outline: 1px solid red;
+    display: block;
+}
+#slogan p {
+    font-family: var(--font1);
+    text-indent: 20px;
+    padding: 0px 20px;
     font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(190, 190, 190);
+    font-weight: bold;
+}
+#horary {
+    width: 25%;
+    height: 250px;
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#horary h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#horary p {
+    color: rgb(190, 190, 190);
+    font-size: 17px;
+    font-weight: bold;
+    width: 260px
+}
+#horary p:nth-of-type(5) {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+#horary p:nth-of-type(5)::before {
+    content: "";
+}
+#horary p:hover {
+    color: var(--cor2)
+}
+#horary p::before {
+    content: "🕒";
+}
+#contact {
+    width: 25%;
+    height: 250px;
+    outline: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact h1 {
+    font-size: 30px;
+    color: white;
+}
+#contact p {
+    font-size: 17px;
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+    width: 230px;
+}
+#contact p:hover {
+    color: var(--cor2);
+}
+#contact p:nth-of-type(1) {
+    margin-top: 30px;
+}
+#contact p:nth-of-type(1)::before {
+    content: "📞";
+}
+#contact p:nth-of-type(2)::before {
+    content: "📞";
+}
+#contact p:nth-of-type(3) {
+    margin-top: 30px;
+    width: 250px;
 }
 
-#menu-container img {
+#location {
+    width: 25%;
+    height: 250px;
+    outline: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map {
     width: 100%;
     height: 100%;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
-    border-radius: 20px;
-    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#menu-container img:hover {
-    filter: brightness(0.8);
+#map iframe {
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
 }
-.card {
-    width: 300px;
-    height: 300px;
-    transition: 0.5s;
-}
-.card:hover {
-    transform: scale(.95);
+#slogan img {
+    display: flex;
+    margin: 20px auto 0px;
+    width: 120px;
+    height: 100px;
+
 }
