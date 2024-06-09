@@ -292,7 +292,6 @@ main h2 {
     background-color: var(--cor0);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     display: flex;
-    padding-bottom: px;
 }
 #slogan {
     width: 25%;
@@ -326,8 +325,9 @@ main h2 {
     }
 }
 @media (max-width: 1080px) {
-    #slogan p {
-        font-size: 15px;
+    #footer-container {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 1400px) {
@@ -541,6 +541,12 @@ main h2 {
     }
     #slogan p {
         font-size: 20px;
+    }
+    #contact p {
+        font-size: 17px;
+    }
+    #horary p {
+        font-size: 17px;
     }
     #footer-container > #horary {
         width: 100%;
