@@ -171,6 +171,7 @@ main h2 {
     display: flex;
     justify-content: center;
     align-items: start;
+    text-align: center;
     color: white;
     font-size: 20px;
     font-weight: bold;
