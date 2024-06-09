@@ -24,7 +24,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 nav a {
@@ -71,10 +71,12 @@ main h2 {
 }
 #history-container {
     font-family: var(--font1);
-    margin: 30px 0px;
     width: 55%;
-    height: 400px;
+    height: 600px;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #history-container h1 {
     text-align: center;
@@ -326,6 +328,26 @@ main h2 {
         font-size: 15px;
     }
 }
+@media (max-width: 1400px) {
+    #container1 {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    #history-container {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    #image1-container {
+        width: 100%;
+        height: 500px;
+    }
+    #image1-container img {
+        width: 60%;
+        height: 400px;
+    }
+}
 #horary {
     width: 25%;
     height: 250px;
@@ -457,7 +479,7 @@ main h2 {
         width: 70px;
         margin: 0px;
     }
-    #container {
+    #container1 {
         margin-top: 70px;
         width: 100%;
         display: block;
