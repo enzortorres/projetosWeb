@@ -88,6 +88,7 @@ main h2 {
     font-size: 20px;
     padding: 30px 30px 30px 60px;
     color: var(--cor1);
+    text-align: justify;
 }
 #image1-container {
     display: flex;
