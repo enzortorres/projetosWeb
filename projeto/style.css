@@ -9,7 +9,9 @@
 
     --font1: 'Cinzel';
 }
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -77,6 +79,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 60px 0px;
 }
 #history-container h1 {
     text-align: center;
@@ -86,9 +89,9 @@ main h2 {
 #history-container p {
     text-indent: 50px;
     font-size: 20px;
-    padding: 30px 30px 30px 60px;
     color: var(--cor1);
     text-align: justify;
+    padding: 0px 30px;
 }
 #image1-container {
     display: flex;
@@ -108,17 +111,18 @@ main h2 {
     height: 100px;
 }
 #menu-container {
-    padding-top: 20px;
+    padding-top: 50px;
     width: 60%;
     height: fit-content;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:  75px;
+    gap: 75px;
     flex-wrap: wrap;
     flex-direction: row;
-    }
+    margin-top: 50px;    
+}
 #menu-container p {
     font-family: var(--font1);
     font-weight: bold;
@@ -306,7 +310,6 @@ main h2 {
     text-align: center;
     font-weight: 400;
     color: rgb(190, 190, 190);
-    font-weight: bold;
 }
 #slogan img {
     display: flex;
