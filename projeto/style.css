@@ -9,9 +9,9 @@
 
     --font1: 'Cinzel';
 }
-html {
-    scroll-behavior: smooth;
-}
+*, html {
+    scroll-behavior: smooth !important;
+    }
 * {
     margin: 0;
     padding: 0;
@@ -333,6 +333,11 @@ main h2 {
         flex-wrap: wrap;
     }
 }
+@media (max-width: 1050px) {
+    #slogan p{
+        font-size: 16px;
+    }
+}
 @media (max-width: 1400px) {
     #container1 {
         display: flex;
@@ -542,8 +547,8 @@ main h2 {
     #footer-container > #slogan {
         width: 100%;
     }
-    #slogan p {
-        font-size: 20px;
+    #slogan {
+        font-size: 18px;
     }
     #contact p {
         font-size: 17px;
@@ -565,6 +570,6 @@ main h2 {
         height: 100px;
     }
     #rights {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
