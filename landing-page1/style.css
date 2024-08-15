@@ -1,0 +1,54 @@
+:root {
+    --cor1: #EF9038;
+}
+
+* {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+ul i {
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: #fff;
+    background: #000;
+}
+
+li img {
+    width: 20px;
+}
+
+main {
+    background: url('college.png') no-repeat;
+    background-position: top 10px right 150px;
+    background-size: 35%;
+    width: 100vw;
+    height: 100vh;
+}
