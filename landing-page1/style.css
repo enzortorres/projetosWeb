@@ -1,37 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --cor1: #EF9038;
 }
 
 * {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    line-height: 1em;
 }
-
+body {
+    background: url('college.png') no-repeat;
+    background-position: top 10vh right 10vw;
+    background-size: 35%;
+}
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 15px 20px 0px 130px;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 0px 10px;
+    height: 60px;
 }
 
 ul i {
-    font-size: 20px;
+    font-size: 25px;
+
 }
 
 li {
-    padding: 10px;
+    padding: 30px 5px;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li a {
+    width: 50px;
+    height: 50px;
     text-decoration: none;
     color: #000;
-    border-radius: 30px;
+    border-radius: 100px;
     padding: 10px;
     transition: 0.3s;
 }
@@ -42,13 +65,47 @@ li a:hover {
 }
 
 li img {
-    width: 20px;
+    width: 30px;
+    margin-top: 10px;
 }
-
+.social-media a:hover {
+    background: none;
+    color: black;
+}
 main {
-    background: url('college.png') no-repeat;
-    background-position: top 10px right 150px;
-    background-size: 35%;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+aside {
+    padding: 100px 0px 50px 150px;
+}
+
+
+h1 {
+    height: fit-content;
+    font-size: 80px;
+    color: #405779;
+}
+
+h2 {
+    font-size: 30px;
+    color: #405779;
+}
+
+p {
+    margin-top: 10px;
+    color: grey;
+}
+
+button {
+    background: #EF9038;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 30px 0px;
 }
