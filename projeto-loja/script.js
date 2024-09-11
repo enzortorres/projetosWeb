@@ -81,6 +81,7 @@ function addCartClicked(event) {
     // button.classList.add('bx-check')
     // button.classList.add('checked')
     addProductToCart(title, price, productImg)
+    cart.classList.add('active')
     updateTotal()
 }
 
