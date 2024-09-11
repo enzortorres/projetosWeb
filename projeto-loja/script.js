@@ -74,6 +74,12 @@ function addCartClicked(event) {
     var title = shopProducts.getElementsByClassName('product-title')[0].innerText
     var price = shopProducts.getElementsByClassName('price')[0].innerText
     var productImg = shopProducts.getElementsByClassName('product-img')[0].src
+    // button.classList.remove('bx') // fica marcado quando adicionar item no carrinho
+    // button.classList.remove('bx-shopping-bag')
+    // button.classList.remove('add-cart')
+    // button.classList.add('bx')
+    // button.classList.add('bx-check')
+    // button.classList.add('checked')
     addProductToCart(title, price, productImg)
     updateTotal()
 }

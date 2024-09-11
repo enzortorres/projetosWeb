@@ -242,6 +242,18 @@ header {
     color: var(--text-color);
 }
 
+.checked {
+    background: var(--main-color);
+    color: var(--bg-color);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
 @media (max-width: 1080px) {
     .nav {
         padding: 15px;
