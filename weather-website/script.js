@@ -120,7 +120,7 @@ function responsividade() {
 
     if (width < 1060) {
         imgContainer.style.display = 'none';
-    } else {
+    } else if (local.value) {
         imgContainer.style.display = 'flex'
     }
 }
