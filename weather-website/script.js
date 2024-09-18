@@ -1,3 +1,6 @@
+import { apiToken } from './config.js'
+console.log(apiToken)
+
 const input = document.querySelector("input")
 const button = document.querySelector("button")
 const theme = document.querySelector(".dark-light-theme")
@@ -56,7 +59,7 @@ async function switchTheme() {
 }
 
 async function getDataApi() {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input.value)}&units=metric&appid=a22a775a6fd0850ee5cff76cb8643bf3`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input.value)}&units=metric&appid=${apiToken}`
 
     try {
         await fetch(url)
