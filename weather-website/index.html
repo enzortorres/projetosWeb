@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Website</title>
+</head>
+<body class="light-theme">
+    <header>
+        <h1 class="logo">Weather<span>Info</span></h1>
+        <i class='bx bxs-moon dark-light-theme'></i>
+    </header>
+    <main>
+        
+        <div class="search">
+            <input type="text" placeholder="Digite o local">
+            <button><i class="bx bx-search"></i></button>
+        </div>
+        <div class="content">
+            <section>
+                <h2 id="local"></h2>
+                <span id="graus"></span>
+                <br>
+                <span id="vento"></span>
+            </section>
+            <div class="img-container" style="display: none">
+                <div class="txt-img">Hoje</div>
+                <img src="" alt="Clima" id="img">
+                <div class="desc-img"></div>
+            </div>
+            <div class="content-footer">
+                <p class="day">Terça-feira, Setembro 17</p>
+                <p class="hour">Atualizado as 21:32</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

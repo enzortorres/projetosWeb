@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --grey: #f7f7f7;
+    --black: #161616;
+    --lightBlack: #303030;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--bg);
+}
+
+main {
+    padding: 50px 100px 0px;
+    border-radius: 5px;
+    min-width: 100vw;
+}
+
+header {
+    background: var(--header);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px 100px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 50px;
+}
+
+.bx {
+    transition: all 0.3s ease;
+}
+
+.dark-light-theme {
+    font-size: 40px;
+    color: var(--txtColor);
+    cursor: pointer;
+}
+
+.light-theme {
+    --header: var(--white);
+    --bg: var(--grey);
+    --txtColor: var(--black);
+}
+
+.dark-theme {
+    --header: var(--black);
+    --bg: var(--lightBlack);
+    --txtColor: var(--white);
+}
+
+header h1 {
+    color: var(--txtColor);
+}
+
+header span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    color: aqua;
+}
+header i {
+    padding-top: 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 0px black;
+}
+
+span {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px 0px 10px 30px;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+button {
+    display: flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button i {
+    font-size: 25px;
+    color: var(--txtColor);
+}
+
+.content {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("images/praia.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin: auto;
+    width: 100%;
+    min-height: 500px;
+    height: fit-content;
+    justify-content: space-between;
+    word-break: break-word;
+}
+.content-footer {
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+    color: white;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.txt-img {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    top: 10px;
+    left: 10px;
+    width: 5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
+#local {
+    font-size: 60px;
+}
+
+#img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 5px 30px;
+    }
+    .search {
+        margin: 0px auto 50px;
+    }
+    main {
+        padding: 10px;
+    }
+}
