@@ -5,6 +5,7 @@ const input = document.querySelector("input")
 const button = document.querySelector("button")
 const theme = document.querySelector(".dark-light-theme")
 const width = window.innerWidth;
+let loadedData = false;
 
 const local = document.querySelector("#local")
 const degrees = document.querySelector("#graus")
@@ -79,7 +80,6 @@ async function getDataApi() {
 function loadData(data) {
     local.innerHTML = `${data.name}, ${data.sys.country}`
     degrees.innerHTML = `Temperatura: ${Math.floor(data.main.temp)}<sup>ºC</sup>`
-    console.log(data.weather)
     img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     switch (data.weather[0].description) {
         case 'clear sky':
@@ -111,11 +111,13 @@ function loadData(data) {
             break
         default:
             imgDesc.innerHTML = `Not found`
+        
     }
     wind.innerHTML = `Vento: ${data.wind.speed} km/h`
     if (width > 1060) {
         imgContainer.style.display = "flex"
     }
+    loadedData = true
 }
 
 function responsividade() {
@@ -123,7 +125,7 @@ function responsividade() {
 
     if (width < 1060) {
         imgContainer.style.display = 'none';
-    } else if (local.value) {
+    } else if (loadedData) {
         imgContainer.style.display = 'flex'
     }
 }
