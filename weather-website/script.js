@@ -126,5 +126,3 @@ function responsividade() {
 }
 
 window.addEventListener('resize', responsividade);
-
-responsividade();
