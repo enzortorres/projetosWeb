@@ -1,5 +1,4 @@
-import { apiToken } from './config.js'
-console.log(apiToken)
+apiToken = 'a22a775a6fd0850ee5cff76cb8643bf3'
 
 const input = document.querySelector("input")
 const button = document.querySelector("button")
