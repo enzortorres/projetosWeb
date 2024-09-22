@@ -55,7 +55,6 @@ async function switchTheme() {
     }
     document.body.classList.toggle('dark-theme')
     theme.classList.toggle('bxs-sun')
-    
 }
 
 async function getDataApi() {
@@ -109,7 +108,7 @@ function loadData(data) {
             imgDesc.innerHTML = "Névoa"
             break
         default:
-            imgDesc.innerHTML = `Not found`
+            imgDesc.innerHTML = `data.weather[0].description`
         
     }
     wind.innerHTML = `Vento: ${data.wind.speed} km/h`
