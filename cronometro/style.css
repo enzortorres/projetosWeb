@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('font/alarm-clock.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Digital';
+    background: #303030;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cronometro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 3px solid snow;
+}
+
+#timer {
+    text-align: center;
+    font-size: 60px;
+    color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
+    letter-spacing: 5px;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#power {
+    font-size: 36px;
+}
+
+button {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 27px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
