@@ -77,7 +77,7 @@ async function getDataApi() {
 
 function loadData(data) {
     local.innerHTML = `${data.name}, ${data.sys.country}`
-    degrees.innerHTML = `Temperatura: ${Math.floor(data.main.temp)}<sup>ºC</sup>`
+    degrees.innerHTML = `<img src="images/termometro.png" class="icon"/> ${Math.floor(data.main.temp)}<sup>ºC</sup>`
     img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     switch (data.weather[0].description) {
         case 'clear sky':
@@ -111,7 +111,7 @@ function loadData(data) {
             imgDesc.innerHTML = `data.weather[0].description`
         
     }
-    wind.innerHTML = `Vento: ${data.wind.speed} km/h`
+    wind.innerHTML = `<img src="images/wind-icon.webp" class="icon"/>  ${data.wind.speed} km/h`
     if (width > 1060) {
         imgContainer.style.display = "flex"
     }
