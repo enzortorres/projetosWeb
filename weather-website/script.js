@@ -15,26 +15,26 @@ const wind = document.querySelector("#vento")
 const content = document.querySelector(".content")
 
 
-const agora = new Date()
-let hora = agora.getHours()
-let minuto = agora.getMinutes()
-const semana = agora.getDay()
-const dia = agora.getDate()
-const mes = agora.getMonth()
+const now = new Date()
+let hora = now.getHours()
+let minuto = now.getMinutes()
+const semana = now.getDay()
+const dia = now.getDate()
+const mes = now.getMonth()
 
-const diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
-const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
-    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+const diasSemana = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const meses = ['January', 'February', 'March', 'April', 'May', 'June', 
+    'July', 'Agoust', 'September', 'October', 'November', 'December']
     
 let day = document.querySelector(".day")
 let hour = document.querySelector(".hour")
     
-if (minuto < 10) minuto = ('0' + agora.getMinutes())
-if (hora < 10) hora = ('0' + agora.getHours())
+if (minuto < 10) minuto = ('0' + now.getMinutes())
+if (hora < 10) hora = ('0' + now.getHours())
 
 
 day.innerHTML = `${diasSemana[semana]}, ${dia} de ${meses[mes]}`
-hour.innerHTML = `Atualizado às ${hora}:${minuto}`
+hour.innerHTML = `Updated at ${hora}:${minuto}`
 
 theme.addEventListener("click", () => {
     switchTheme()
@@ -65,7 +65,7 @@ async function getDataApi() {
             .then((res) => res.json())
             .then((data) => {
                 if (data?.cod && data.cod === "404") {
-                    return alert("Local não encontrado")
+                    return alert("Location not found")
                 }
     
                 loadData(data)
@@ -81,31 +81,31 @@ function loadData(data) {
     img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     switch (data.weather[0].description) {
         case 'clear sky':
-            imgDesc.innerHTML = "Céu limpo"
+            imgDesc.innerHTML = "Clear Sky"
             break
         case 'few clouds':
-            imgDesc.innerHTML = "Poucas nuvens"
+            imgDesc.innerHTML = "Few Clouds"
             break
         case 'scattered clouds':
-            imgDesc.innerHTML = "Nuvens dispersas"
+            imgDesc.innerHTML = "Scattered Clouds"
             break
         case 'broken clouds':
-            imgDesc.innerHTML = "Nuvens fragmentadas"
+            imgDesc.innerHTML = "Broken Clouds"
             break
         case 'overcast clouds':
-            imgDesc.innerHTML = "Nuvens sobrecarregadas"
+            imgDesc.innerHTML = "Overcast Clouds"
             break
         case 'rain':
-            imgDesc.innerHTML = "Chuva"
+            imgDesc.innerHTML = "Rain"
             break
         case 'thunderstorm':
-            imgDesc.innerHTML = "Tempestade"
+            imgDesc.innerHTML = "Thunderstorm"
             break
         case 'snow':
-            imgDesc.innerHTML = "Neve"
+            imgDesc.innerHTML = "Snow"
             break
         case 'mist':
-            imgDesc.innerHTML = "Névoa"
+            imgDesc.innerHTML = "Mist"
             break
         default:
             imgDesc.innerHTML = `data.weather[0].description`
