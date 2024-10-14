@@ -8,6 +8,7 @@ let loadedData = false;
 
 const local = document.querySelector("#local")
 const degrees = document.querySelector("#graus")
+const humi = document.querySelector("#humidade")
 const img = document.querySelector("#img")
 const imgContainer = document.querySelector(".img-container")
 const imgDesc = document.querySelector(".desc-img")
@@ -78,6 +79,7 @@ async function getDataApi() {
 function loadData(data) {
     local.innerHTML = `${data.name}, ${data.sys.country}`
     degrees.innerHTML = `<img src="images/termometro.png" class="icon"/> ${Math.floor(data.main.temp)}<sup>ºC</sup>`
+    humi.innerHTML = `<img src="images/humidity-icon.png" class="icon"/> ${data.main.humidity}%`
     img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     switch (data.weather[0].description) {
         case 'clear sky':

@@ -184,16 +184,6 @@ button i {
     text-align: center;
 }
 
-#graus {
-    display: flex;
-    align-items: center;
-}
-
-#vento {
-    display: flex;
-    align-items: center;
-}
-
 #local {
     font-size: 60px;
 }
@@ -202,6 +192,12 @@ button i {
     width: 60%;
     height: 60%;
     border-radius: 50%;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media only screen and (max-width: 500px) {
