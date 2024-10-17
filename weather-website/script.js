@@ -109,8 +109,11 @@ function loadData(data) {
         case 'mist':
             imgDesc.innerHTML = "Mist"
             break
+        case 'moderate rain':
+            imgDesc.innerHTML = "Moderate Rain"
+            break
         default:
-            imgDesc.innerHTML = `data.weather[0].description`
+            imgDesc.innerHTML = `${data.weather[0].description}`
         
     }
     wind.innerHTML = `<img src="images/wind-icon.webp" class="icon"/>  ${data.wind.speed} km/h`
