@@ -34,7 +34,7 @@ if (minuto < 10) minuto = ('0' + now.getMinutes())
 if (hora < 10) hora = ('0' + now.getHours())
 
 
-day.innerHTML = `${diasSemana[semana]}, ${dia} de ${meses[mes]}`
+day.innerHTML = `${diasSemana[semana]}, ${meses[mes]} ${dia}`
 hour.innerHTML = `Updated at ${hora}:${minuto}`
 
 theme.addEventListener("click", () => {
