@@ -6,6 +6,9 @@ urlpatterns = [
     # facebook.com
     path('', views.home, name='home'),
 
+    # users.com/users
+    path('users/', views.users, name='listagem_usuarios')
+
     # facebook.com/enzortorres
     # path('enzortorres/)
 
