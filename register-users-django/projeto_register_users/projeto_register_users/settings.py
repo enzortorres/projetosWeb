@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'projeto_register_users.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'register_db',  # Substitua pelo nome do seu banco
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',  # Ou IP do servidor PostgreSQL
+        'PORT': '5432',  # Porta padrão do PostgreSQL
     }
 }
+
 
 
 # Password validation
@@ -104,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

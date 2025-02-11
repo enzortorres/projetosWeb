@@ -1,7 +1,7 @@
 {% extends "users/base.html" %}
 {% block content %}
 
-<form action="{% url 'listagem_usuarios' %}" method="post">
+<form method="POST" action="{% url 'register_user' %}">
     {% csrf_token %}
     <div style="text-align: center;
                 display: flex;
@@ -9,9 +9,17 @@
                 width: 500px;
     " class="container">
         <h1>Users register</h1>
-        Name <input name="name" class="form-control-sm" type="text" autocomplete="off"> 
-        Age <input name="age" class="form-control-sm" type="text" autocomplete="off"> 
+        Name <input name="name" class="form-control-sm" type="text" autocomplete="off" required> 
+        Age <input name="age" class="form-control-sm" type="number" autocomplete="off" required> 
         <button class="form-control-sm">Enviar</button>
     </div>
 </form>
+<div style="
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;" 
+        class="anchor-container">
+    <a href="{% url 'listagem_usuarios' %}" style="color: black;">Ver usuários cadastrados</a>
+</div>
+
 {% endblock %}
