@@ -76,15 +76,17 @@ WSGI_APPLICATION = 'projeto_register_users.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'register_db',  # Substitua pelo nome do seu banco
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',  # Ou IP do servidor PostgreSQL
-        'PORT': '5432',  # Porta padrão do PostgreSQL
+        'ENGINE': 'django.db.backends.postgresql', # define o tipo do banco de dados
+        'NAME': 'register_db',  # o nome do banco de dados
+        'USER': 'postgres', # o nome do usario
+        'PASSWORD': 'postgres', # a senha do usuário do PostgreSQL
+        'HOST': 'localhost',  # localhost ou IP do servidor PostgreSQL
+        'PORT': '5432',  # porta padrão do PostgreSQL
+
+        # 'ENGINE': 'django.db.backends.sqlite3',  # usando o SQLite
+        # 'NAME': BASE_DIR / 'db.sqlite3',  # caminho para o arquivo SQLite
     }
 }
-
 
 
 # Password validation
