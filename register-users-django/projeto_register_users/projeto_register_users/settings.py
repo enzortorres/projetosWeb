@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'projeto_register_users.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': { # definir o banco de dados padrão
         'ENGINE': 'django.db.backends.postgresql', # define o tipo do banco de dados
         'NAME': 'register_db',  # o nome do banco de dados
         'USER': 'postgres', # o nome do usario
